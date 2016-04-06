@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Threading;
 using MassTransit;
-using MassTransitDemo.Core.Contracts;
 
 namespace MassTransitDemo.ConsumerConsole
 {
@@ -23,6 +23,13 @@ namespace MassTransitDemo.ConsumerConsole
             });
 
             busControl.Start();
+
+            Console.WriteLine("Console waiting for InsertShopOrder Messages....");
+            Console.ReadKey();
+
+            busControl.Stop();
+            Console.WriteLine("...bye");
+            Thread.Sleep(300);
         }
     }
 }

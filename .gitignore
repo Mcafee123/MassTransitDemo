@@ -27,3 +27,6 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+src/MassTransitDemo.Web/node_modules/gulp/node_modules/
+src/MassTransitDemo.Web/node_modules/
+src/MassTransitDemo.Web/wwwroot/lib/
