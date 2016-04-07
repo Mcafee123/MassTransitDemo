@@ -56,10 +56,15 @@ namespace MassTransitDemo.Web
             // add masstransit bus
             var bus = Bus.Factory.CreateUsingRabbitMq(cfg =>
             {
-                var host = cfg.Host(new Uri("rabbitmq://localhost"), h =>
+                var host = cfg.Host(new Uri("rabbitmq://localhost/iba_orders"), h =>
                 {
                     h.Username("guest");
                     h.Password("guest");
+                });
+
+                cfg.ReceiveEndpoint(host, "iba_orders_queue", ep => 
+                {
+                    
                 });
             });
 

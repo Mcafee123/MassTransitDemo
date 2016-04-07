@@ -10,13 +10,13 @@ namespace MassTransitDemo.ConsumerConsole
         {
             var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
             {
-                var host = cfg.Host(new Uri("rabbitmq://localhost/"), h =>
+                var host = cfg.Host(new Uri("rabbitmq://localhost/iba_orders"), h =>
                 {
                     h.Username("guest");
                     h.Password("guest");
                 });
 
-                cfg.ReceiveEndpoint(host, "customer_update_queue", e =>
+                cfg.ReceiveEndpoint(host, "iba_orders_queue", e =>
                 {
                     e.Consumer<InsertShopOrderConsumer>();
                 });
