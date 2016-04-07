@@ -64,5 +64,38 @@
         </environment>
 
         @RenderSection("scripts", required: false)
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var bt = $("#orderButton");
+                var frm = $("#orderForm");
+                if (bt.length && frm.length) {
+                    bt.click(function (evt) {
+                        var data = {
+                            CustomerName: $("#CustomerName").val(),
+                            CustomerFirstName: $("#CustomerFirstName").val()
+                        };
+                        data = JSON.stringify(data);
+                        $.ajax({
+                            url: "/api/orders",
+                            type: "POST",
+                            //dataType: 'json',
+                            data: data,
+                            processData: false,
+                            contentType: "application/json",
+                            complete: function (data) {
+                                console.log("posted");
+                            },
+                            error: function (response) {
+                                console.error(response.responseText);
+                            }
+                        });
+
+
+                    });
+                }
+            });
+
+        </script>
     </body>
 </html>

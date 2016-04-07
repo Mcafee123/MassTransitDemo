@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using MassTransit;
+using MassTransitDemo.Core;
+using MassTransitDemo.Core.Contracts;
+using MassTransitDemo.Web.Models;
 using Microsoft.AspNet.Mvc;
 
 namespace MassTransitDemo.Web.Controllers
@@ -16,9 +17,9 @@ namespace MassTransitDemo.Web.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
             return View();
         }
+
 
         public IActionResult Contact()
         {

@@ -36,7 +36,8 @@
     "dnx451": {
         "dependencies": {
             "MassTransit": "3.2.4",
-            "MassTransit.RabbitMQ": "3.2.4"
+            "MassTransit.RabbitMQ": "3.2.4",
+            "MassTransitDemo.Core": "1.0.0-*"
         }
     }
   },

@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MassTransit;
+using MassTransitDemo.Core.Contracts;
+using MassTransitDemo.Web.Models;
+using MassTransitDemo.Web.Services;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -10,8 +10,6 @@ using Microsoft.Data.Entity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MassTransitDemo.Web.Models;
-using MassTransitDemo.Web.Services;
 
 namespace MassTransitDemo.Web
 {
@@ -22,7 +20,7 @@ namespace MassTransitDemo.Web
             // Set up configuration sources.
             var builder = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true);
 
             if (env.IsDevelopment())
             {
@@ -66,6 +64,12 @@ namespace MassTransitDemo.Web
             });
 
             services.AddSingleton<IBus>(provider => bus);
+
+            //var address = new Uri("loopback://localhost/MassTransitDemoQueue");
+            //var requestTimeout = TimeSpan.FromSeconds(30);
+            //services.AddTransient(
+            //    provider =>
+            //        new MessageRequestClient<IInsertShopOrder, InsertShopOrderResult>(bus, address, requestTimeout));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -91,10 +95,12 @@ namespace MassTransitDemo.Web
                         .CreateScope())
                     {
                         serviceScope.ServiceProvider.GetService<ApplicationDbContext>()
-                             .Database.Migrate();
+                            .Database.Migrate();
                     }
                 }
-                catch { }
+                catch
+                {
+                }
             }
 
             app.UseIISPlatformHandler(options => options.AuthenticationDescriptions.Clear());
@@ -107,9 +113,7 @@ namespace MassTransitDemo.Web
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }
 

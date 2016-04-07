@@ -5,9 +5,9 @@ using MassTransitDemo.Core.Contracts;
 
 namespace MassTransitDemo.ConsumerConsole
 {
-    public class InsertShopOrderConsumer : IConsumer<InsertShopOrder>
+    public class InsertShopOrderConsumer : IConsumer<IInsertShopOrder>
     {
-        public async Task Consume(ConsumeContext<InsertShopOrder> context)
+        public async Task Consume(ConsumeContext<IInsertShopOrder> context)
         {
             await
                 Console.Out.WriteLineAsync(

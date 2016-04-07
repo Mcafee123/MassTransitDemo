@@ -167,6 +167,10 @@
           "lib/net45/MassTransit.RabbitMqTransport.dll": {}
         }
       },
+      "MassTransitDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
+      },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -2268,6 +2272,10 @@
         "runtime": {
           "lib/net45/MassTransit.RabbitMqTransport.dll": {}
         }
+      },
+      "MassTransitDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -4374,6 +4382,10 @@
           "lib/net45/MassTransit.RabbitMqTransport.dll": {}
         }
       },
+      "MassTransitDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
+      },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -6316,6 +6328,10 @@
     }
   },
   "libraries": {
+    "MassTransitDemo.Core/1.0.0": {
+      "type": "project",
+      "path": "../wrap/MassTransitDemo.Core/project.json"
+    },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -8626,7 +8642,8 @@
     ],
     "DNX,Version=v4.5.1": [
       "MassTransit >= 3.2.4",
-      "MassTransit.RabbitMQ >= 3.2.4"
+      "MassTransit.RabbitMQ >= 3.2.4",
+      "MassTransitDemo.Core >= 1.0.0-*"
     ]
   }
 }

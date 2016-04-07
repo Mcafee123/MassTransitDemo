@@ -1,10 +1,9 @@
 ﻿namespace MassTransitDemo.Core.Contracts
 {
-    // ReSharper disable once InconsistentNaming
-    public interface InsertShopOrder
+    public interface IInsertShopOrder
     {
         string CustomerName { get; }
         string CustomerFirstName { get; }
-        string[] OrderedProductIds { get; } 
+        //string[] OrderedProductIds { get; } 
     }
 }
