@@ -1,11 +1,4 @@
-﻿using System.Threading.Tasks;
-using MassTransit;
-using MassTransitDemo.Core;
-using MassTransitDemo.Core.Contracts;
-using MassTransitDemo.Web.Models;
-using Microsoft.AspNet.Mvc;
-
-namespace MassTransitDemo.Web.Controllers
+﻿namespace RabbitMqDemo.Web.Controllers
 {
     public class HomeController : Controller
     {

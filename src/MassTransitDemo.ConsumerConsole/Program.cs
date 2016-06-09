@@ -1,35 +1,49 @@
 ﻿using System;
 using System.Threading;
-using MassTransit;
 
-namespace MassTransitDemo.ConsumerConsole
+namespace RabbitMqDemo.ConsumerConsole
 {
     class Program
     {
+        /*
+        static IBusControl _busControl;
+
         static void Main(string[] args)
         {
-            var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
+            while (true)
             {
-                var host = cfg.Host(new Uri("rabbitmq://localhost/iba_orders"), h =>
+                if (_busControl == null)
                 {
-                    h.Username("guest");
-                    h.Password("guest");
-                });
+                    _busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
+                    {
+                        var host = cfg.Host(new Uri("rabbitmq://localhost/iba_orders"), h =>
+                        {
+                            h.Username("guest");
+                            h.Password("guest");
+                        });
 
-                cfg.ReceiveEndpoint(host, "iba_orders_queue", e =>
+                        cfg.ReceiveEndpoint(host, "iba_orders_queue", e =>
+                        {
+                            e.Consumer<InsertShopOrderConsumer>();
+                        });
+                    });
+
+                    _busControl.Start();
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Console waiting for InsertShopOrder Messages.... (press Esc to exit)");
+
+                var key = Console.ReadKey();
+                if (key.Key == ConsoleKey.Escape)
                 {
-                    e.Consumer<InsertShopOrderConsumer>();
-                });
-            });
-
-            busControl.Start();
-
-            Console.WriteLine("Console waiting for InsertShopOrder Messages....");
-            Console.ReadKey();
-
-            busControl.Stop();
-            Console.WriteLine("...bye");
-            Thread.Sleep(300);
+                    _busControl.Stop();
+                    Console.WriteLine("...bye");
+                    Thread.Sleep(300);
+                    break;
+                }
+            }
         }
+        */
     }
 }

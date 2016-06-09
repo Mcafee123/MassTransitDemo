@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net451": {
+      "wrappedProject": "../../MassTransitDemo.Core/RabbitMqDemo.Core.csproj",
+      "bin": {
+        "assembly": "../../MassTransitDemo.Core/obj/{configuration}/RabbitMqDemo.Core.dll",
+        "pdb": "../../MassTransitDemo.Core/obj/{configuration}/RabbitMqDemo.Core.pdb"
+      }
+    }
+  }
+}

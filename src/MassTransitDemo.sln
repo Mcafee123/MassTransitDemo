@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitDemo.Core", "MassTransitDemo.Core\MassTransitDemo.Core.csproj", "{F3A06E82-C1AF-43AE-865F-4CD1E7A32DCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDemo.Core", "MassTransitDemo.Core\RabbitMqDemo.Core.csproj", "{F3A06E82-C1AF-43AE-865F-4CD1E7A32DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitDemo.ConsumerConsole", "MassTransitDemo.ConsumerConsole\MassTransitDemo.ConsumerConsole.csproj", "{227002EE-1397-47A2-BB52-1D3E34B9E168}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDemo.ConsumerConsole", "MassTransitDemo.ConsumerConsole\RabbitMqDemo.ConsumerConsole.csproj", "{227002EE-1397-47A2-BB52-1D3E34B9E168}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MassTransitDemo.Web", "MassTransitDemo.Web\MassTransitDemo.Web.xproj", "{B58FCD24-2859-42F5-A01B-3EAB1ECB136A}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RabbitMqDemo.Web", "MassTransitDemo.Web\RabbitMqDemo.Web.xproj", "{B58FCD24-2859-42F5-A01B-3EAB1ECB136A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

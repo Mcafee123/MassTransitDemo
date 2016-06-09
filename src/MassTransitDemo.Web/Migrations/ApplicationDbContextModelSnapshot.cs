@@ -1,14 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.Infrastructure;
-using Microsoft.Data.Entity.Metadata;
-using Microsoft.Data.Entity.Migrations;
-using MassTransitDemo.Web.Models;
+using RabbitMqDemo.Web.Models;
 
-namespace MassTransitDemo.Web.Migrations
+namespace RabbitMqDemo.Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

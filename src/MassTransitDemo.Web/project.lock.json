@@ -139,38 +139,6 @@
           "lib/net45/System.Interactive.Async.dll": {}
         }
       },
-      "MassTransit/3.2.4": {
-        "type": "package",
-        "dependencies": {
-          "NewId": "2.1.3",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/net45/MassTransit.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MassTransit.dll": {}
-        }
-      },
-      "MassTransit.RabbitMQ/3.2.4": {
-        "type": "package",
-        "dependencies": {
-          "MassTransit": "3.2.4",
-          "NewId": "2.1.3",
-          "Newtonsoft.Json": "7.0.1",
-          "RabbitMQ.Client": "3.6.1"
-        },
-        "compile": {
-          "lib/net45/MassTransit.RabbitMqTransport.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MassTransit.RabbitMqTransport.dll": {}
-        }
-      },
-      "MassTransitDemo.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.5.1"
-      },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1860,16 +1828,7 @@
           "lib/dnx451/Microsoft.VisualStudio.Web.BrowserLink.Loader.dll": {}
         }
       },
-      "NewId/2.1.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/NewId.dll": {}
-        },
-        "runtime": {
-          "lib/net45/NewId.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/6.0.6": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -1878,14 +1837,9 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "RabbitMQ.Client/3.6.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/RabbitMQ.Client.dll": {}
-        },
-        "runtime": {
-          "lib/net45/RabbitMQ.Client.dll": {}
-        }
+      "RabbitMqDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
       },
       "Remotion.Linq/2.0.1": {
         "type": "package",
@@ -2244,38 +2198,6 @@
         "runtime": {
           "lib/net45/System.Interactive.Async.dll": {}
         }
-      },
-      "MassTransit/3.2.4": {
-        "type": "package",
-        "dependencies": {
-          "NewId": "2.1.3",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/net45/MassTransit.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MassTransit.dll": {}
-        }
-      },
-      "MassTransit.RabbitMQ/3.2.4": {
-        "type": "package",
-        "dependencies": {
-          "MassTransit": "3.2.4",
-          "NewId": "2.1.3",
-          "Newtonsoft.Json": "7.0.1",
-          "RabbitMQ.Client": "3.6.1"
-        },
-        "compile": {
-          "lib/net45/MassTransit.RabbitMqTransport.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MassTransit.RabbitMqTransport.dll": {}
-        }
-      },
-      "MassTransitDemo.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.5.1"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -3969,16 +3891,7 @@
           "lib/dnx451/Microsoft.VisualStudio.Web.BrowserLink.Loader.dll": {}
         }
       },
-      "NewId/2.1.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/NewId.dll": {}
-        },
-        "runtime": {
-          "lib/net45/NewId.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/6.0.6": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -3987,14 +3900,9 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "RabbitMQ.Client/3.6.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/RabbitMQ.Client.dll": {}
-        },
-        "runtime": {
-          "lib/net45/RabbitMQ.Client.dll": {}
-        }
+      "RabbitMqDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
       },
       "Remotion.Linq/2.0.1": {
         "type": "package",
@@ -4353,38 +4261,6 @@
         "runtime": {
           "lib/net45/System.Interactive.Async.dll": {}
         }
-      },
-      "MassTransit/3.2.4": {
-        "type": "package",
-        "dependencies": {
-          "NewId": "2.1.3",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/net45/MassTransit.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MassTransit.dll": {}
-        }
-      },
-      "MassTransit.RabbitMQ/3.2.4": {
-        "type": "package",
-        "dependencies": {
-          "MassTransit": "3.2.4",
-          "NewId": "2.1.3",
-          "Newtonsoft.Json": "7.0.1",
-          "RabbitMQ.Client": "3.6.1"
-        },
-        "compile": {
-          "lib/net45/MassTransit.RabbitMqTransport.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MassTransit.RabbitMqTransport.dll": {}
-        }
-      },
-      "MassTransitDemo.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.5.1"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -6078,16 +5954,7 @@
           "lib/dnx451/Microsoft.VisualStudio.Web.BrowserLink.Loader.dll": {}
         }
       },
-      "NewId/2.1.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/NewId.dll": {}
-        },
-        "runtime": {
-          "lib/net45/NewId.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/6.0.6": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -6096,14 +5963,9 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "RabbitMQ.Client/3.6.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/RabbitMQ.Client.dll": {}
-        },
-        "runtime": {
-          "lib/net45/RabbitMQ.Client.dll": {}
-        }
+      "RabbitMqDemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
       },
       "Remotion.Linq/2.0.1": {
         "type": "package",
@@ -6328,9 +6190,9 @@
     }
   },
   "libraries": {
-    "MassTransitDemo.Core/1.0.0": {
+    "RabbitMqDemo.Core/1.0.0": {
       "type": "project",
-      "path": "../wrap/MassTransitDemo.Core/project.json"
+      "path": "../wrap/RabbitMqDemo.Core/project.json"
     },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
@@ -6440,28 +6302,6 @@
         "lib/net45/System.Interactive.Async.XML",
         "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll",
         "lib/portable-windows8+net45+wp8/System.Interactive.Async.XML"
-      ]
-    },
-    "MassTransit/3.2.4": {
-      "type": "package",
-      "sha512": "QZGXMdmpcdwaKRx6gHgwefy8h8BIJWqHde76xKAArHjQ51bQpGNU2lEtUXLVfydSXUHUup+kC7RxHV/3eZWYbQ==",
-      "files": [
-        "lib/net45/MassTransit.dll",
-        "lib/net45/MassTransit.XML",
-        "MassTransit.3.2.4.nupkg",
-        "MassTransit.3.2.4.nupkg.sha512",
-        "MassTransit.nuspec"
-      ]
-    },
-    "MassTransit.RabbitMQ/3.2.4": {
-      "type": "package",
-      "sha512": "PMSP8uhI79tAfEnmRbGzlLDtA/SCAGXYCtzpFKfRnGRE691UPwdK9LWfkdMjH3NfGHDLs9N5XqIivCdb+Ffazw==",
-      "files": [
-        "lib/net45/MassTransit.RabbitMqTransport.dll",
-        "lib/net45/MassTransit.RabbitMqTransport.xml",
-        "MassTransit.RabbitMQ.3.2.4.nupkg",
-        "MassTransit.RabbitMQ.3.2.4.nupkg.sha512",
-        "MassTransit.RabbitMQ.nuspec"
       ]
     },
     "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
@@ -7780,19 +7620,9 @@
         "Microsoft.VisualStudio.Web.BrowserLink.Loader.nuspec"
       ]
     },
-    "NewId/2.1.3": {
+    "Newtonsoft.Json/6.0.6": {
       "type": "package",
-      "sha512": "SmfFDkw86FLdv4Sth71Pu5B9br7jjBxP5kGT7JuFunIh6HS9AORzUwkdrlgZwY34kl4VgYMmUOusFErBjk1Vrg==",
-      "files": [
-        "lib/net45/NewId.dll",
-        "NewId.2.1.3.nupkg",
-        "NewId.2.1.3.nupkg.sha512",
-        "NewId.nuspec"
-      ]
-    },
-    "Newtonsoft.Json/7.0.1": {
-      "type": "package",
-      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
+      "sha512": "w26uZNyCG5VeoKiEOJ4+9/o8koSofLKwHl7WLreIcp0U6r57L7WiRXmjp8MTKFw6dYNZ9AE0lw69WYbIhUsU9Q==",
       "files": [
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -7802,28 +7632,16 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
-        "Newtonsoft.Json.7.0.1.nupkg",
-        "Newtonsoft.Json.7.0.1.nupkg.sha512",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "Newtonsoft.Json.6.0.6.nupkg",
+        "Newtonsoft.Json.6.0.6.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "tools/install.ps1"
-      ]
-    },
-    "RabbitMQ.Client/3.6.1": {
-      "type": "package",
-      "sha512": "hq7lbvwxJI8e6TvVbizEQ0LyBVB7xGibheCkoVtWMSDIP72k1hLIJSGk884uxUM12uJkWb9uVjIsBPu9/hjPTw==",
-      "files": [
-        "lib/net45/RabbitMQ.Client.dll",
-        "lib/net45/RabbitMQ.Client.xml",
-        "lib/netcore45/RabbitMQ.Client.dll",
-        "lib/netcore45/RabbitMQ.Client.xml",
-        "RabbitMQ.Client.3.6.1.nupkg",
-        "RabbitMQ.Client.3.6.1.nupkg.sha512",
-        "RabbitMQ.Client.nuspec",
-        "RabbitMQ.Client.nuspec~"
       ]
     },
     "Remotion.Linq/2.0.1": {
@@ -8641,9 +8459,7 @@
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
     ],
     "DNX,Version=v4.5.1": [
-      "MassTransit >= 3.2.4",
-      "MassTransit.RabbitMQ >= 3.2.4",
-      "MassTransitDemo.Core >= 1.0.0-*"
+      "RabbitMqDemo.Core >= 1.0.0-*"
     ]
   }
 }

@@ -1,17 +1,7 @@
-﻿using System;
-using MassTransit;
-using MassTransitDemo.Core.Contracts;
-using MassTransitDemo.Web.Models;
-using MassTransitDemo.Web.Services;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Data.Entity;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+﻿using RabbitMqDemo.Web.Models;
+using RabbitMqDemo.Web.Services;
 
-namespace MassTransitDemo.Web
+namespace RabbitMqDemo.Web
 {
     public class Startup
     {

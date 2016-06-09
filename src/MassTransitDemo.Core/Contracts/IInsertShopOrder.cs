@@ -1,4 +1,4 @@
-﻿namespace MassTransitDemo.Core.Contracts
+﻿namespace RabbitMqDemo.Core.Contracts
 {
     public interface IInsertShopOrder
     {

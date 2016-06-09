@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Http.Authentication;
-using Microsoft.AspNet.Identity;
+﻿using System.Collections.Generic;
 
-namespace MassTransitDemo.Web.ViewModels.Manage
+namespace RabbitMqDemo.Web.ViewModels.Manage
 {
     public class ManageLoginsViewModel
     {

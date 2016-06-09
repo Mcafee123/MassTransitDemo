@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MassTransitDemo.Web.ViewModels.Manage
+﻿namespace RabbitMqDemo.Web.ViewModels.Manage
 {
     public class SetPasswordViewModel
     {

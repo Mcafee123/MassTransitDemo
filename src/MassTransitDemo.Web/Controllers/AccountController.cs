@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Authorization;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Mvc;
-using Microsoft.AspNet.Mvc.Rendering;
-using Microsoft.Data.Entity;
-using Microsoft.Extensions.Logging;
-using MassTransitDemo.Web.Models;
-using MassTransitDemo.Web.Services;
-using MassTransitDemo.Web.ViewModels.Account;
+using RabbitMqDemo.Web.Models;
+using RabbitMqDemo.Web.Services;
+using RabbitMqDemo.Web.ViewModels.Account;
 
-namespace MassTransitDemo.Web.Controllers
+namespace RabbitMqDemo.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

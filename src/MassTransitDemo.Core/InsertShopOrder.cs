@@ -1,6 +1,6 @@
-﻿using MassTransitDemo.Core.Contracts;
+﻿using RabbitMqDemo.Core.Contracts;
 
-namespace MassTransitDemo.Core
+namespace RabbitMqDemo.Core
 {
     public class InsertShopOrder: IInsertShopOrder
     {

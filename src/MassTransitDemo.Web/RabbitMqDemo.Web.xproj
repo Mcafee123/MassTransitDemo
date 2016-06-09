@@ -7,7 +7,7 @@
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>b58fcd24-2859-42f5-a01b-3eab1ecb136a</ProjectGuid>
-    <RootNamespace>MassTransitDemo.Web</RootNamespace>
+    <RootNamespace>RabbitMqDemo.Web</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DnxInvisibleContent Include="package.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MassTransitDemo.Core\MassTransitDemo.Core.csproj" />
+    <ProjectReference Include="..\MassTransitDemo.Core\RabbitMqDemo.Core.csproj" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

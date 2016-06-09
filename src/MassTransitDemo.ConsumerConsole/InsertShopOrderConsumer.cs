@@ -1,17 +1,25 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MassTransit;
-using MassTransitDemo.Core.Contracts;
+using RabbitMqDemo.Core.Contracts;
 
-namespace MassTransitDemo.ConsumerConsole
+namespace RabbitMqDemo.ConsumerConsole
 {
+    /*
     public class InsertShopOrderConsumer : IConsumer<IInsertShopOrder>
     {
         public async Task Consume(ConsumeContext<IInsertShopOrder> context)
         {
-            await
-                Console.Out.WriteLineAsync(
+            if (context.Message.CustomerFirstName.ToLower() == "fritz")
+            {
+                await Console.Out.WriteLineAsync(
+                    $"Message not Accepted, because it's Fritz: {context.Message.CustomerFirstName} {context.Message.CustomerName}");
+                context.NotifyFaulted();
+            }
+            else
+            {
+                await Console.Out.WriteLineAsync(
                     $"Updating customer: {context.Message.CustomerFirstName} {context.Message.CustomerName}");
+            }
         }
-    }
+    }*/
 }

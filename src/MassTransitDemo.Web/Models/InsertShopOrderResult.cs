@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MassTransitDemo.Web.Models
+namespace RabbitMqDemo.Web.Models
 {
     public interface InsertShopOrderResult
     {

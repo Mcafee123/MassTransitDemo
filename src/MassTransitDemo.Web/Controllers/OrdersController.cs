@@ -1,9 +1,6 @@
 ﻿using System.Threading.Tasks;
-using MassTransit;
-using MassTransitDemo.Core;
-using Microsoft.AspNet.Mvc;
 
-namespace MassTransitDemo.Web.Controllers
+namespace RabbitMqDemo.Web.Controllers
 {
     public class OrdersController : Controller
     {

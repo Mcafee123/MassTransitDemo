@@ -7,8 +7,8 @@
     <ProjectGuid>{227002EE-1397-47A2-BB52-1D3E34B9E168}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MassTransitDemo.ConsumerConsole</RootNamespace>
-    <AssemblyName>MassTransitDemo.ConsumerConsole</AssemblyName>
+    <RootNamespace>RabbitMqDemo.ConsumerConsole</RootNamespace>
+    <AssemblyName>RabbitMqDemo.ConsumerConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MassTransit, Version=3.2.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
-      <HintPath>..\packages\MassTransit.3.2.4\lib\net45\MassTransit.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MassTransit.RabbitMqTransport, Version=3.2.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
-      <HintPath>..\packages\MassTransit.RabbitMQ.3.2.4\lib\net45\MassTransit.RabbitMqTransport.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="NewId, Version=2.1.3.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
       <HintPath>..\packages\NewId.2.1.3\lib\net45\NewId.dll</HintPath>
       <Private>True</Private>
@@ -72,9 +64,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MassTransitDemo.Core\MassTransitDemo.Core.csproj">
+    <ProjectReference Include="..\MassTransitDemo.Core\RabbitMqDemo.Core.csproj">
       <Project>{f3a06e82-c1af-43ae-865f-4cd1e7a32dcd}</Project>
-      <Name>MassTransitDemo.Core</Name>
+      <Name>RabbitMqDemo.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
