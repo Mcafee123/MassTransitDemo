@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 using RabbitMQ.Client;
 
@@ -55,15 +53,22 @@ namespace RabbitMqDemo.Web.Controllers
                     byte[] messageBodyBytes = System.Text.Encoding.UTF8.GetBytes("Hello, world!");
 
                     IBasicProperties props = channel.CreateBasicProperties();
-                    props.ContentType = "text/plain";
-                    props.DeliveryMode = 2;
-                    props.Headers = new Dictionary<string, object> {{"correlationId", "12345-> auftrags-id"}};
+                    props.ContentType = "application/json";
+                    props.ContentEncoding = "UTF-8";
+                    props.DeliveryMode = 2; // Non-persistent (1) or persistent (2).
+                    props.MessageId = Guid.NewGuid().ToString();
+                    var unixTime = (long)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+                    props.Timestamp = new AmqpTimestamp(unixTime);
+                    props.CorrelationId = "12345";
+                    props.Priority = 4;
+                    props.Headers = new Dictionary<string, object> {{"customHeader", "auftrags-id"}};
 
                     channel.BasicPublish(exchangeName,
                                        ibaRoutingKey, props,
                                        messageBodyBytes);
                 }
             }
+            Console.WriteLine((long) DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
             return View();
         }
 
